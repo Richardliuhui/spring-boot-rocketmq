@@ -270,5 +270,59 @@ public class DefaultRocketMQListenerContainer implements InitializingBean, Rocke
     }
 
 
+    public String getNameServer() {
+        return nameServer;
+    }
 
+    public void setNameServer(String nameServer) {
+        this.nameServer = nameServer;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public String getConsumerGroup() {
+        return consumerGroup;
+    }
+
+    public void setConsumerGroup(String consumerGroup) {
+        this.consumerGroup = consumerGroup;
+    }
+
+    public ConsumeMode getConsumeMode() {
+        return consumeMode;
+    }
+
+    public void setConsumeMode(ConsumeMode consumeMode) {
+        this.consumeMode = consumeMode;
+    }
+
+    public int getConsumeThreadMax() {
+        return consumeThreadMax;
+    }
+
+    public void setConsumeThreadMax(int consumeThreadMax) {
+        this.consumeThreadMax = consumeThreadMax;
+    }
+
+    public MessageModel getMessageModel() {
+        return messageModel;
+    }
+
+    public void setMessageModel(MessageModel messageModel) {
+        this.messageModel = messageModel;
+    }
+
+    public String getSelectorExpress() {
+        return selectorExpress;
+    }
+
+    public void setSelectorExpress(String selectorExpress) {
+        this.selectorExpress = selectorExpress;
+    }
 }
